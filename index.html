@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempletNest - Premium Website Templates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .template-card:hover .template-overlay {
+            opacity: 1;
+        }
+        .template-card:hover .template-image {
+            transform: scale(1.05);
+        }
+        .template-image {
+            transition: transform 0.3s ease;
+        }
+        .template-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <i class="fas fa-layer-group text-primary-600 text-3xl mr-2"></i>
+                        <span class="text-2xl font-heading font-bold text-gray-800">TempletNest</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-600 font-medium">Home</a>
+                    <a href="templates.html" class="text-gray-700 hover:text-primary-600 font-medium">Templates</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-primary-600 font-medium">Contact</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-primary-600 font-medium">FAQ</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-primary-600">
+                        <i class="fas fa-search text-xl"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4">Ready-to-Use Website Templates</h1>
+                <p class="text-xl text-primary-100 mb-8">Responsive, fast, and beautifully designed templates for your next project.</p>
+                <a href="templates.html" class="inline-block bg-white text-primary-700 font-medium px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                    Browse Templates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-gray-800 mb-4">Why Choose Our Templates</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide high-quality templates that help you launch your website faster</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="bg-primary-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-edit text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Easy to Customize</h3>
+                    <p class="text-gray-600">Clean, well-documented code that's simple to modify</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="bg-primary-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Mobile Friendly</h3>
+                    <p class="text-gray-600">Fully responsive designs that work on all devices</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl">
+                    <div class="bg-primary-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-headset text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Free Support</h3>
+                    <p class="text-gray-600">Our team is here to help you with any questions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Templates -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-gray-800 mb-4">Featured Templates</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Check out our most popular templates this week</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Template 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Business Template" class="w-full h-full object-cover template-image">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 template-overlay flex items-center justify-center">
+                            <div class="flex space-x-3">
+                                <a href="#" class="bg-white text-primary-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">View Demo</a>
+                                <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold text-gray-800">Business Pro</h3>
+                            <span class="text-primary-600 font-bold">$49</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Perfect for corporate websites and business portfolios</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">Responsive</span>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">HTML5</span>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Template 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Portfolio Template" class="w-full h-full object-cover template-image">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 template-overlay flex items-center justify-center">
+                            <div class="flex space-x-3">
+                                <a href="#" class="bg-white text-primary-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">View Demo</a>
+                                <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold text-gray-800">Portfolio Creative</h3>
+                            <span class="text-primary-600 font-bold">$39</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Showcase your work with this elegant portfolio template</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">Responsive</span>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">Animations</span>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Template 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="E-commerce Template" class="w-full h-full object-cover template-image">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 template-overlay flex items-center justify-center">
+                            <div class="flex space-x-3">
+                                <a href="#" class="bg-white text-primary-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition">View Demo</a>
+                                <a href="#" class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-semibold text-gray-800">E-commerce Shop</h3>
+                            <span class="text-primary-600 font-bold">$59</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Complete e-commerce solution with cart and checkout</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">Responsive</span>
+                            <span class="bg-primary-100 text-primary-800 text-xs px-3 py-1 rounded-full">Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="templates.html" class="inline-block bg-primary-600 text-white font-medium px-8 py-3 rounded-lg shadow-lg hover:bg-primary-700 transition duration-300">
+                    View All Templates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary-700 to-primary-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-heading font-bold mb-4">Start Your Project Today</h2>
+                <p class="text-lg text-primary-100 mb-8">Get access to premium templates and accelerate your development process</p>
+                <a href="templates.html" class="inline-block bg-white text-primary-700 font-medium px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition duration-300">
+                    Browse Templates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-layer-group text-primary-500 text-3xl mr-2"></i>
+                        <span class="text-2xl font-heading font-bold text-white">TempletNest</span>
+                    </div>
+                    <p class="mb-4">Premium website templates for developers and designers</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary-400 transition">Home</a></li>
+                        <li><a href="templates.html" class="hover:text-primary-400 transition">Templates</a></li>
+                        <li><a href="contact.html" class="hover:text-primary-400 transition">Contact</a></li>
+                        <li><a href="faq.html" class="hover:text-primary-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-primary-400 transition">Documentation</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Support</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to get updates on new templates</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                            <button type="submit" class="bg-primary-600 text-white px-4 py-2 rounded-r-lg hover:bg-primary-700 transition">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2023 TempletNest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartButtons = document.querySelectorAll('.template-card a:last-child');
+            
+            cartButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Template added to cart!');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
